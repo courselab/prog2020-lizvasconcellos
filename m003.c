@@ -23,7 +23,29 @@
 
 int is_prime (int a)
 {
-  return 0;
+
+  int x;
+  x = 0;
+
+  for (int i = 1; i <= a; ++i)
+  {
+    if (a % i == 0)
+    {
+      ++x;
+    }
+    else
+    ;
+  }
+
+  if ( x > 2)
+  {
+    return 0;
+  }
+  else
+  {
+    return 1;
+  }
+  
 }
 
 #define USAGE "m003 <num>\n"

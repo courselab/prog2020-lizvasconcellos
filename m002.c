@@ -27,70 +27,70 @@
 
 void sort (int *a, int *b, int *c)
 {
+  
   int x, y, z;
 
   x = *a;
   y = *b;
   z = *c;
 
-    if ( (x<y) && (x<z) )
+    if ( (x < y) && (x < z) )
     {
       *a = x;
 
-      if (y<z)
-      {
-        *b = y;
-        *c = z;
-      }
+          if (y < z)
+          {
+              *b = y;
+              *c = z;
+          }
 
-      else
-      {
-        *b = z;
-        *c = y;
-      }
+          else
+          {
+              *b = z;
+              *c = y;
+          }
 
     }
 
     else
     {
-      if ( (y<x) && (y<z) )
+      
+      if ( (y < x) && (y < z) )
       {
         *a = y;
 
-        if (x<z)
-        {
-          *b = x;
-          *c = z;
-        }
+            if (x < z)
+            {
+                *b = x;
+                *c = z;
+            }
 
-        else
-        {
-          *b = z;
-          *c = y;
-        }
+            else
+            {
+                *b = z;
+                *c = y;
+            }
       }
 
       else
       {
         *a = z;
 
-        if (x<y)
-        {
-          *b = x;
-          *c = y;
-        }
+            if (x < y)
+            {
+                *b = x;
+                *c = y;
+            }
 
-        else
-        {
-          *b = y;
-          *c = z;
-        }
+            else
+            {
+                *b = y;
+                *c = z;
+            }
       }
     }
   
-  
-
-}
+  }
 
 /* Do not edit this function. */
 
