@@ -68,7 +68,7 @@ void sort (int *a, int *b, int *c)
             else
             {
                 *b = z;
-                *c = y;
+                *c = x;
             }
       }
 
@@ -85,7 +85,7 @@ void sort (int *a, int *b, int *c)
             else
             {
                 *b = y;
-                *c = z;
+                *c = x;
             }
       }
     }
