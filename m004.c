@@ -27,6 +27,8 @@
    right before the spurious character (eg. truncate 110x001
    into 110); an empty string means zero. */
 
+
+
 int potencia (int base, int exp)
 {
   int total = 1;
@@ -54,10 +56,15 @@ int decimal (char *b)
 
   int soma = 0;
 
+  int x = 0;
+
   for (int i = n - 1 ; i >= 0 ; i--)
   {
     if ( b[i] == '1' )
-    soma = soma + potencia (2, i);
+    {
+      soma = soma + potencia (2,x);
+    }
+    ++x;
   }
 
   return soma;
