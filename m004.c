@@ -27,12 +27,40 @@
    right before the spurious character (eg. truncate 110x001
    into 110); an empty string means zero. */
 
+int potencia (int base, int exp)
+{
+  int total = 1;
+
+  if (exp == 0)
+  {
+    total = total;
+  }
+  else
+  {
+      for (int i = 0 ; i < exp ; i++)
+    {
+      total = total * base;
+    }
+  }
+  
+  return total;
+}
+
+
 int decimal (char *b)
 {
-  
-  n = strlen (b)
 
-  return 0;
+  int n = strlen (b);
+
+  int soma = 0;
+
+  for (int i = n - 1 ; i >= 0 ; i--)
+  {
+    if ( b[i] == '1' )
+    soma = soma + potencia (2, i);
+  }
+
+  return soma;
 }
 
 #define USAGE "m004 <string>\n"
