@@ -30,6 +30,8 @@
 int decimal (char *b)
 {
   
+  n = strlen (b)
+
   return 0;
 }
 
