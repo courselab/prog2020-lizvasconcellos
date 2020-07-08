@@ -42,6 +42,8 @@ int day_of_week (int day, int month)
 
   resultado = (total % 7) + 2;
 
+  resultado = resultado % 7;
+
   return resultado;
 
   
