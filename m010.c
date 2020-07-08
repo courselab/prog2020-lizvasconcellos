@@ -30,7 +30,7 @@ enum {sun, mon, tue, wed, thu, fri, sat};
 
 int day_of_week (int day, int month)
 {
-  int mes[13] = {0, 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+  int mes[12] = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
   int total = 0;
   int dia1 = 2;
   int resultado;
