@@ -25,22 +25,22 @@
 
 void sort (int* vector, int n)
 {
-  int i = 1, b, a;
+  int a, b;
+  int x = 1;
 
-  while ( 1 < n )
+  while ( x < n )
   {
+    a = x - 1;
+    b = vector[x];
 
-    a = vector[i];
-    b = i - 1;
-
-    while ( b >= 0 && vector[b] > a)
+    while ( (a >= 0) && (vector[a] > b) )
     {
-      vector[b + 1] = vector[b];
-      b = b - 1;
+      vector[a + 1] = vector[a];
+      a = a - 1;
     }
 
-    vector[b + 1] = a;
-    i = i + 1;
+    vector[a + 1] = b;
+    x = x + 1;
 
   }
 }
